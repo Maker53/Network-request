@@ -69,18 +69,38 @@
         <!--Image View Controller-->
         <scene sceneID="44F-QK-gXR">
             <objects>
-                <viewController id="t5O-se-0C2" userLabel="Image View Controller" sceneMemberID="viewController">
+                <viewController id="t5O-se-0C2" userLabel="Image View Controller" customClass="ImageViewController" customModule="Network_request" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ocY-g7-bBY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="7AX-EN-oSK">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Syt-rp-Uop">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Z6t-k3-vBc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Syt-rp-Uop" firstAttribute="top" secondItem="Z6t-k3-vBc" secondAttribute="top" id="GYS-tC-zGW"/>
+                            <constraint firstItem="Syt-rp-Uop" firstAttribute="leading" secondItem="Z6t-k3-vBc" secondAttribute="leading" id="O0T-eb-Pom"/>
+                            <constraint firstItem="Syt-rp-Uop" firstAttribute="trailing" secondItem="Z6t-k3-vBc" secondAttribute="trailing" id="OIt-JY-qlI"/>
+                            <constraint firstItem="7AX-EN-oSK" firstAttribute="centerY" secondItem="ocY-g7-bBY" secondAttribute="centerY" id="eH6-U5-epL"/>
+                            <constraint firstItem="7AX-EN-oSK" firstAttribute="centerX" secondItem="ocY-g7-bBY" secondAttribute="centerX" id="fMv-Hi-hwP"/>
+                            <constraint firstItem="Z6t-k3-vBc" firstAttribute="bottom" secondItem="Syt-rp-Uop" secondAttribute="bottom" id="ouU-lZ-5wS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mnP-VR-NFs"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="7AX-EN-oSK" id="PyH-C3-6cw"/>
+                        <outlet property="imageView" destination="Syt-rp-Uop" id="cnU-N0-SpT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j87-aT-mXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1207" y="-233"/>
+            <point key="canvasLocation" x="1205.5999999999999" y="-233.43328335832086"/>
         </scene>
         <!--Courses View Controller-->
         <scene sceneID="ow2-z3-frl">
