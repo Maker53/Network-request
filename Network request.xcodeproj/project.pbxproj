@@ -13,6 +13,7 @@
 		854DB6AF27514FCB0084555E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 854DB6AE27514FCB0084555E /* Assets.xcassets */; };
 		854DB6B227514FCB0084555E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 854DB6B027514FCB0084555E /* LaunchScreen.storyboard */; };
 		854DB6BA275154B70084555E /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DB6B9275154B70084555E /* MainCollectionViewController.swift */; };
+		854DB6C0275220680084555E /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DB6BF275220680084555E /* UserActionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		854DB6B127514FCB0084555E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		854DB6B327514FCB0084555E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		854DB6B9275154B70084555E /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		854DB6BF275220680084555E /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		854DB6A427514FC80084555E /* Network request */ = {
 			isa = PBXGroup;
 			children = (
-				854DB6A527514FC80084555E /* AppDelegate.swift */,
-				854DB6A727514FC80084555E /* SceneDelegate.swift */,
-				854DB6AB27514FC80084555E /* Main.storyboard */,
-				854DB6B9275154B70084555E /* MainCollectionViewController.swift */,
-				854DB6AE27514FCB0084555E /* Assets.xcassets */,
-				854DB6B027514FCB0084555E /* LaunchScreen.storyboard */,
-				854DB6B327514FCB0084555E /* Info.plist */,
+				854DB6BD275220270084555E /* ViewControllers */,
+				854DB6C12752254A0084555E /* CellContents */,
+				854DB6BB275220100084555E /* Storyboards */,
+				854DB6BE275220300084555E /* Resources */,
+				854DB6BC2752201D0084555E /* App */,
 			);
 			path = "Network request";
+			sourceTree = "<group>";
+		};
+		854DB6BB275220100084555E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				854DB6AB27514FC80084555E /* Main.storyboard */,
+				854DB6B027514FCB0084555E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		854DB6BC2752201D0084555E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				854DB6A527514FC80084555E /* AppDelegate.swift */,
+				854DB6A727514FC80084555E /* SceneDelegate.swift */,
+				854DB6B327514FCB0084555E /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		854DB6BD275220270084555E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				854DB6B9275154B70084555E /* MainCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		854DB6BE275220300084555E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				854DB6AE27514FCB0084555E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		854DB6C12752254A0084555E /* CellContents */ = {
+			isa = PBXGroup;
+			children = (
+				854DB6BF275220680084555E /* UserActionCell.swift */,
+			);
+			path = CellContents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				854DB6C0275220680084555E /* UserActionCell.swift in Sources */,
 				854DB6A627514FC80084555E /* AppDelegate.swift in Sources */,
 				854DB6BA275154B70084555E /* MainCollectionViewController.swift in Sources */,
 				854DB6A827514FC80084555E /* SceneDelegate.swift in Sources */,
@@ -291,7 +335,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T94XUBZ99A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Network request/Info.plist";
+				INFOPLIST_FILE = "Network request/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +364,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T94XUBZ99A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Network request/Info.plist";
+				INFOPLIST_FILE = "Network request/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
