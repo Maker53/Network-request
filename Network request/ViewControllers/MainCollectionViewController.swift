@@ -88,19 +88,79 @@ class MainCollectionViewController: UICollectionViewController {
 // MARK: Networking
 extension MainCollectionViewController {
     func exampleOneButtonPressed() {
+        guard let url = URL(string: Link.exampleOne.rawValue) else { return }
         
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            do {
+                let course = try JSONDecoder().decode(Course.self, from: data)
+                self.succesAlert()
+                print(course)
+            } catch let error {
+                self.failedAlert()
+                print(error.localizedDescription)
+            }
+        }.resume()
     }
     
     func exampleTwoButtonPressed() {
+        guard let url = URL(string: Link.exampleTwo.rawValue) else { return }
         
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            do {
+                let courses = try JSONDecoder().decode([Course].self, from: data)
+                self.succesAlert()
+                print(courses)
+            } catch let error {
+                self.failedAlert()
+                print(error.localizedDescription)
+            }
+        }.resume()
     }
     
     func exampleThreeButtonPressed() {
+        guard let url = URL(string: Link.exampleThree.rawValue) else { return }
         
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            do {
+                let websiteDescription = try JSONDecoder().decode(WebsiteDescription.self, from: data)
+                self.succesAlert()
+                print(websiteDescription)
+            } catch let error {
+                self.failedAlert()
+                print(error.localizedDescription)
+            }
+        }.resume()
     }
     
     func exampleFourButtonPressed() {
+        guard let url = URL(string: Link.exampleFour.rawValue) else { return }
         
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            do {
+                let websiteDescription = try JSONDecoder().decode(WebsiteDescription.self, from: data)
+                self.succesAlert()
+                print(websiteDescription)
+            } catch let error {
+                self.failedAlert()
+                print(error.localizedDescription)
+            }
+        }.resume()
     }
 }
 

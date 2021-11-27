@@ -105,7 +105,7 @@
         <!--Courses View Controller-->
         <scene sceneID="ow2-z3-frl">
             <objects>
-                <tableViewController id="j05-jq-rTi" userLabel="Courses View Controller" sceneMemberID="viewController">
+                <tableViewController id="j05-jq-rTi" userLabel="Courses View Controller" customClass="CoursesViewController" customModule="Network_request" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wz5-KS-i7c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
