@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -56,10 +57,49 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Main View Controller" id="JZK-Ks-Z40"/>
+                    <connections>
+                        <segue destination="t5O-se-0C2" kind="show" identifier="showImage" id="h3S-sv-I2n"/>
+                        <segue destination="j05-jq-rTi" kind="show" identifier="showCourses" id="Ov3-1h-WGC"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S04-At-vR1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="421.60000000000002" y="100.29985007496252"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="44F-QK-gXR">
+            <objects>
+                <viewController id="t5O-se-0C2" userLabel="Image View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ocY-g7-bBY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Z6t-k3-vBc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mnP-VR-NFs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j87-aT-mXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1207" y="-233"/>
+        </scene>
+        <!--Courses View Controller-->
+        <scene sceneID="ow2-z3-frl">
+            <objects>
+                <tableViewController id="j05-jq-rTi" userLabel="Courses View Controller" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wz5-KS-i7c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="j05-jq-rTi" id="kAX-4L-Ohc"/>
+                            <outlet property="delegate" destination="j05-jq-rTi" id="pD7-VQ-qz1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Fim-9A-gyB"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCU-ae-ifa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1206" y="462"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZMk-P9-d5r">

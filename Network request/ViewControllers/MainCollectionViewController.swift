@@ -35,7 +35,16 @@ class MainCollectionViewController: UICollectionViewController {
     
     // MARK: UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let userAction = userActions[indexPath.item]
         
+        switch userAction {
+        case .downloadImage: performSegue(withIdentifier: "showImage", sender: nil)
+        case .exampleOne: exampleOneButtonPressed()
+        case .exampleTwo: exampleTwoButtonPressed()
+        case .exampleThree: exampleThreeButtonPressed()
+        case .exampleFour: exampleFourButtonPressed()
+        case .ourCourses: performSegue(withIdentifier: "showCourses", sender: nil)
+        }
     }
     
     // MARK: Private Methods
@@ -65,6 +74,25 @@ class MainCollectionViewController: UICollectionViewController {
             alert.addAction(okAction)
             self.present(alert, animated: true)
         }
+    }
+}
+
+// MARK: Networking
+extension MainCollectionViewController {
+    func exampleOneButtonPressed() {
+        
+    }
+    
+    func exampleTwoButtonPressed() {
+        
+    }
+    
+    func exampleThreeButtonPressed() {
+        
+    }
+    
+    func exampleFourButtonPressed() {
+        
     }
 }
 
