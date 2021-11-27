@@ -17,6 +17,7 @@
 		854DB6C327522D2A0084555E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DB6C227522D2A0084555E /* ImageViewController.swift */; };
 		854DB6C5275257150084555E /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DB6C4275257150084555E /* Course.swift */; };
 		854DB6C727526B400084555E /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DB6C627526B3F0084555E /* CoursesViewController.swift */; };
+		854DB6C9275273E00084555E /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DB6C8275273E00084555E /* CourseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		854DB6C227522D2A0084555E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		854DB6C4275257150084555E /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		854DB6C627526B3F0084555E /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		854DB6C8275273E00084555E /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				854DB6BF275220680084555E /* UserActionCell.swift */,
+				854DB6C8275273E00084555E /* CourseCell.swift */,
 			);
 			path = CellContents;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				854DB6C727526B400084555E /* CoursesViewController.swift in Sources */,
 				854DB6C0275220680084555E /* UserActionCell.swift in Sources */,
 				854DB6A627514FC80084555E /* AppDelegate.swift in Sources */,
+				854DB6C9275273E00084555E /* CourseCell.swift in Sources */,
 				854DB6C327522D2A0084555E /* ImageViewController.swift in Sources */,
 				854DB6BA275154B70084555E /* MainCollectionViewController.swift in Sources */,
 				854DB6A827514FC80084555E /* SceneDelegate.swift in Sources */,
